@@ -19,7 +19,7 @@ class HelloWorldApplicationTests {
 
     @Test
     void testHelloEndpoint() {
-        webTestClient.get().uri("/hello")
+        webTestClient.get().uri("/hello/")
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(String.class)
